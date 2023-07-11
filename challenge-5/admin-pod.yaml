@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: admin-pod
+spec:
+  containers:
+  - name: admin-container
+    image: busybox
+    command: ["sleep","3200"]
+    securityContext:
+      capabilities:
+        add: ["SYS_TIME"]
