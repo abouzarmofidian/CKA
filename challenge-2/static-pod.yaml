@@ -4,6 +4,5 @@ metadata:
   name: static-nginx
 spec:
   containers:
-    - name: container-nginx
-      image: nginx
-      
+  - name: container-nginx
+    image: nginx
