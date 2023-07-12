@@ -24,13 +24,13 @@
 ### challenge-6:
 * Create a new deployment called web-proj-268, with image nginx:1.16 and 1 replica. Next upgrade the deployment to version 1.17 using rolling update.
 
-Make sure that the version upgrade is recorded in the resource annotation.
+* Make sure that the version upgrade is recorded in the resource annotation.
 -------------------------------------------------------------------------------
 ### challenge-7:
 * Create a pod called web-pod using image nginx, expose it internally with a service called web-pod-svc. Check that you are able to look up the service and pod from eithin the cluster.
 
-Use the image: busybox:1.28 for dns lookup.
-Record result in /root/web-svc.svc and /root/web-pod.pod
+* Use the image: busybox:1.28 for dns lookup.
+* Record result in /root/web-svc.svc and /root/web-pod.pod
 -------------------------------------------------------------------------------
 ### challenge-8: 
 * Use JSONPATH query to retrieve the osImages of all nodes and store it in a file "allNodes_osImage.txt" at root location.
@@ -38,8 +38,9 @@ Record result in /root/web-svc.svc and /root/web-pod.pod
 ### challenge-9:
 * Create a persistent volume with the given specification.
 
-Volume Name: pv-rnd
-Storage: 100Mi
-Access modes: ReadWriteMany
-HostPath: /pv/host_data-rnd
+* Volume Name: pv-rnd
+* Storage: 100Mi
+* Access modes: ReadWriteMany
+* HostPath: /pv/host_data-rnd
 -------------------------------------------------------------------------------
+
