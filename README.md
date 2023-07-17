@@ -43,4 +43,14 @@
 * Access modes: ReadWriteMany
 * HostPath: /pv/host_data-rnd
 -------------------------------------------------------------------------------
-
+### Challenge-10:
+* Create a new ClusterRole named deployment-clusterrole, which only allows to create the following resource types:
+✑ Deployment
+✑ Stateful Set
+✑ DaemonSet
+* Create a new ServiceAccount named cicd-token in the existing namespace app-team1.
+* Bind the new ClusterRole deployment-clusterrole to the new ServiceAccount cicd-token, limited to the namespace app-team1.
+-------------------------------------------------------------------------------
+### Challenge-11:
+* Set the node named ek8s-node-0 as unavailable and reschedule all the pods running on it.
+--------------------------------------------------------------------------------

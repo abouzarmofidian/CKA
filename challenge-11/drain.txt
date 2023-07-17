@@ -1,0 +1,3 @@
+kubectl drain ek8s-node-0 --ignore-daemonsets
+
+kubectl drain ek8s-node-0 --ignore-daemonsets --delete-emptydir-data

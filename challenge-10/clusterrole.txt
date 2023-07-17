@@ -1,0 +1,8 @@
+kubectl create clusterrole deployment-clusterrole --verb=create --resource=Deployment,StatefulSet,DaemonSet
+
+kubectl create serviceaccount cicd-token --namespace app-team1
+OR
+kubectl create sa cicd-token --namespace app-team1
+
+kubectl create clusterrolebinding deployment-clusterrole-binding --clusterrole=deployment-clusterrole --serviceaccount=app-team1:cicd-token
+
